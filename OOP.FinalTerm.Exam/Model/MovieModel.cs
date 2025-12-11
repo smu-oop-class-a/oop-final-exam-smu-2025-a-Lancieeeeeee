@@ -14,11 +14,7 @@ namespace OOP.FinalTerm.Exam
         public int Ratings { get; set; }
 
         #region methods [TOUCH IT NOT.]
-        /// <summary>
-        /// Converts a local image file to base64 string and stores it in the Cover property.
-        /// </summary>
-        /// <param name="imagePath">Path to the local image file</param>
-        /// <returns>True if conversion was successful; otherwise false</returns>
+       
         public bool SetCoverFromFile(string imagePath)
         {
             try
@@ -38,10 +34,7 @@ namespace OOP.FinalTerm.Exam
             }
         }
 
-        /// <summary>
-        /// Converts the base64 Cover string to an Image object.
-        /// </summary>
-        /// <returns>Image object if conversion is successful; otherwise null</returns>
+       
         public Image GetCoverImage()
         {
             try
@@ -63,11 +56,6 @@ namespace OOP.FinalTerm.Exam
             }
         }
 
-        /// <summary>
-        /// Saves the base64 Cover image to a local file.
-        /// </summary>
-        /// <param name="outputPath">Path where the image will be saved</param>
-        /// <returns>True if save was successful; otherwise false</returns>
         public bool SaveCoverToFile(string outputPath)
         {
             try
